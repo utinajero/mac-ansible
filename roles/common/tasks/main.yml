@@ -1,0 +1,3 @@
+# osx/roles/common/tasks/main.yml
+---
+- include: common.yml

@@ -1,0 +1,28 @@
+# osx/roles/common/defaults/main.yml
+---
+base_osx:
+  # common --------------------------------
+  common:
+    # taps ----------------------------------
+    taps:
+      - homebrew/binary
+    
+    # packages --------------------------------
+    packages:
+      - rbenv
+      - ruby-build
+      - ansible
+      - apple-gcc42
+      - brew-cask
+      - openssl
+      - pkg-config
+      - libyaml
+      - autoconf
+      - wireshark
+      - packer
+    
+    # casks --------------------------------
+    casks:
+      - dropbox 
+      - google-drive
+      
