@@ -17,3 +17,7 @@
 - name: brew cask install base_osx.common.casks
   homebrew_cask: name={{ item }} state=installed
   with_items: base_osx.common.casks
+
+- name: brew uninstall base_osx.common.remove
+  homebrew: name={{ item }} state=absent
+  with_items: base_osx.common.remove
