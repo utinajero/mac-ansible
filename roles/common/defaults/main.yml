@@ -18,7 +18,6 @@ base_osx:
       - pkg-config
       - libyaml
       - autoconf
-      - wireshark
       - packer
       - youtube-dl
     
