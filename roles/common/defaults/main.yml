@@ -12,19 +12,19 @@ base_osx:
       - rbenv
       - ruby-build
       - ansible
-      - apple-gcc42
-      - brew-cask
+      - youtube-dl
       - openssl
       - pkg-config
       - libyaml
       - autoconf
-      - packer
-      - youtube-dl
+      #- packer
+      #- apple-gcc42
+      #- brew-cask
     
     # casks --------------------------------
-    casks:
-      - dropbox 
-      - google-drive
-    remove:
-      - wireshark
+    #casks:
+      #- dropbox 
+      #- google-drive
+    #remove:
+      #- wireshark
       
