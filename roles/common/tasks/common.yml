@@ -15,7 +15,7 @@
   with_items: base_osx.common.packages
   register: result
 
-- name: brew tap --repair 
+- name: brew tap --repair if packages fail to install 
   command: "/usr/local/bin/brew tap --repair"
   when: result|failed
 
