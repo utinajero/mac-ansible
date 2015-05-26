@@ -18,6 +18,7 @@ base_osx:
       - libyaml
       - autoconf
       - python
+      - python3
       - packer
       - apple-gcc42
       - brew-cask
