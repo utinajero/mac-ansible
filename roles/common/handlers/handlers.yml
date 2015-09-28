@@ -1,0 +1,5 @@
+handlers: errors
+command: "/usr/local/bin/brew tap --repair"
+command: "sudo chown -R admin /usr/local/bin"
+command: "sudo chown -R admin /usr/local/share"
+when: result|failed
