@@ -1,5 +1,8 @@
 # osx/roles/common/tasks/common.yml
 ---
+# - name: Change permisisons 
+#   command: "ruby ~/bin/brew_help"
+
 - name: brew update 1
   homebrew: update_homebrew=yes
 
@@ -9,8 +12,6 @@
 
 - name: brew update 2 and upgrade all 
   homebrew: update_homebrew=yes upgrade_all=yes
-  notify:
-    - errors
 
 - name: brew install base_osx.common.packages
   homebrew: name={{ item }} state=upgraded

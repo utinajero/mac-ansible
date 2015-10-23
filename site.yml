@@ -1,6 +1,7 @@
 # osx/roles/site.yml
 ---
 - hosts: all
+  remote_user: admin
   gather_facts: False
   roles:
     - common
