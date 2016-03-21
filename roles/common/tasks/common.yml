@@ -1,6 +1,6 @@
 # osx/roles/common/tasks/common.yml
 ---
-# - name: Change permisisons 
+# - name: Change permisisons
 #   command: "ruby ~/bin/brew_help -f"
 
 - name: brew update 1
@@ -8,14 +8,14 @@
 
 - name: brew tap base_osx_common.taps
   homebrew_tap: name={{ item }} state=present
-  with_items: base_osx.common.taps
+  with_items: "{{base_osx.common.taps}}"
 
-- name: brew update 2 and upgrade all 
+- name: brew update 2 and upgrade all
   homebrew: upgrade_all=yes
 
 - name: brew install base_osx.common.packages
   homebrew: name={{ item }} state=upgraded
-  with_items: base_osx.common.packages
+  with_items: "{{base_osx.common.packages}}"
   register: result
 
 # - name: brew cask install base_osx.common.casks
