@@ -3,14 +3,14 @@
 # - name: Change permisisons
 #   command: "ruby ~/bin/brew_help -f"
 
-- name: brew update 1
+- name: brew update true
   homebrew: update_homebrew=yes
 
 - name: brew tap base_osx_common.taps
   homebrew_tap: name={{ item }} state=present
   with_items: "{{base_osx.common.taps}}"
 
-- name: brew update 2 and upgrade all
+- name: brew upgrade_all true
   homebrew: upgrade_all=yes
 
 - name: brew install base_osx.common.packages
